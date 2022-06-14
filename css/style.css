@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Montserrat:wght@300;500;700&display=swap');
+header{
+  display: block;
+  height:30px;
+  background-color: gray;
+}
+header h1{
+  margin:0;
+  text-align: center;
+  font-size: 3vw;
+}
+label {
+  display: inline-block;
+  width: 5em;
+}
+html,body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat';
+}
+.accordion{min-width:25vw}
+.container{
+  display: block;
+  /* 100%-header/footer/padding */
+  min-height: calc(100vh - 210px);
+  margin: 0;
+  padding: 20px;
+  display: grid;
+  grid-gap: 5vw;
+    grid-template-columns: 1fr;
+  grid-template-areas:
+    "a"
+    "b"
+    "c";
+}
+@media only screen and (min-width: 700px)  {
+  .container{
+      grid-template-columns: 1fr 1fr ;
+    grid-template-areas:
+    "a b"
+    "c c";
+  }
+  header{
+    height:50px;
+  }
+}
+@media only screen and (min-width: 1100px) {
+    .container{
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas:
+      "a b c"
+    }
+    header{
+      height:70px;
+    }
+
+}
+.userinvolvement{
+  grid-area: : a;
+}
+.wireframe{
+    grid-area: b;
+}
+  .ontwerpproces{
+    grid-area: c;
+}
+footer{
+  display: block;
+  height: 100px;
+  background-color: gray;
+
+  text-align: center;
+
+}
+footer a{
+  color: white;
+  font-size: 1em;
+  vertical-align: middle;
+}
