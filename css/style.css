@@ -87,11 +87,22 @@ footer{
   height: 100px;
   background-color: gray;
 
-  text-align: center;
+
 
 }
 footer a{
   color: white;
   font-size: 1em;
   vertical-align: middle;
+  text-align: center;
+}
+
+#copyright {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  font-family: sans-serif;
+  color: black;
+  font-size: 12px;
+  padding: 5px;
 }
